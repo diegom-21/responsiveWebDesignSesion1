@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+
+}
+
+/* HAMBURGUESA */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 3, 3);
+}
+
+.menu-items {
+    display: flex; /* Horizontal */
+    align-items: center;
+    list-style-type: none; /* Eliminar puntos de la lista */
+    padding: 0; /* Eliminar Relleno de la lista */
+}
+
+
+.menu-items li {
+    margin: 20px 16px 5px; /* Espacio entre los elementos */
+    background-color: red; /* Color de fondo */
+    padding: 8px;  /* Espacio para darle forma */
+    border-radius: 6px;  /* Cambiar bordes de los li */
+}
+
+.menu-items a{
+    text-decoration: none; /* Esto quita la subrayado predeterminado */
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+@media(max-width:767px){
+    .menu-items {
+        flex-direction: column; /* Cambiar la dirección de los elementos a vertical */
+    }
+
+    .menu-items li {
+        margin: 5px 0; /* Reducir el espacio entre los elementos */
+    }
+
+    .menu-items a {
+        font-size: 20px; /* Reducir el tamaño del texto */
+    }
+}
+
+
+/* CONCEPTO */
+.content {
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.content div {
+    text-align: center; 
+    max-width: 600px; 
+}
+
+.content h1{
+    font-size: 40px;
+    font-weight: bold;
+}
